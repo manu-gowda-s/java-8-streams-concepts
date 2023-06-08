@@ -74,7 +74,7 @@ public class StreamsEmployeeList {
 		empList.stream().sorted().forEach(System.out::println);
 
 		// Sort Employee Name by Asending order
-		empList.stream().filter(sal -> sal.getFirstName() != null)
+		empList.stream().filter(name -> name.getFirstName() != null)
 				.map(n -> n.getFirstName()).sorted()
 				.forEach(System.out::println);
 		
