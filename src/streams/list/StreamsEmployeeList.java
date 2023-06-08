@@ -95,9 +95,9 @@ public class StreamsEmployeeList {
 
 		// // calulate the AVG salary of DEV Department
 		OptionalDouble devTeamAvgSalary = empList.stream()
-												 .filter(dept -> dept.getDept() == "DEV")
-												 .mapToDouble(Employee::getSalary)
-												 .average();
+							.filter(dept -> dept.getDept() == "DEV")
+							.mapToDouble(Employee::getSalary)
+							.average();
 		System.out.println("DEV Department Averge Salary is : " + devTeamAvgSalary.getAsDouble());
 		
 
